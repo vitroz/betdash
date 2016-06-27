@@ -1,0 +1,973 @@
+
+
+body {
+	background-image: url('../img/back3.jpg');
+	background-attachment: fixed;
+}
+
+.cor-azul_escuro {
+	/*Cor de Fundo */
+	background-color: #0c1726;
+}
+
+.cor-azul_royal {
+	background-color:#334975; 
+}
+
+.topo-fixo{	
+	color:#fff;
+	padding-top:10px;
+	padding-bottom:2px;
+	border:1px solid #fff;
+	border-right:1px;
+	border-left:0;
+	position:fixed;
+	overflow:hidden;
+	z-index:999}
+
+.logo{
+	padding-left:0;
+	margin-left:0;
+	margin-top:60px;
+	margin-bottom: 5px;
+}
+
+.navbar-inner{
+	background-image:-moz-linear-gradient(top,#019de5,#334975);
+	background-image:-ms-linear-gradient(top,#019de5,#334975);
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#019de5),to(#334975));
+	background-image:-webkit-linear-gradient(top,#019de5,#334975);
+	background-image:-o-linear-gradient(top,#019de5,#334975);
+	background-image:linear-gradient(top,#019de5,#334975);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#'019de5,endColorstr='#'334975,GradientType=0)
+}
+
+.navbar .brand{
+	padding:8px 20px 12px;font-size:20px;color:#fff
+}
+
+.navbar .divider-vertical{
+	height:31px;width:.1px;background-color:#fff;border-right:.1px solid #0fffff
+}
+
+.navbar .nav > li > a{
+	padding:10px 10px 11px;
+	font-size:15px;
+	color:#fff;
+	font-weight:500
+}
+
+.navbar .nav > .active > a,.navbar .nav > .active > a:hover,.navbar .nav > .active > a:focus{
+	color:#fff;
+	background-color:#334975;
+}
+
+
+.container{
+	width:1100px;
+	margin-right: auto;
+	margin-left: auto;
+} 
+
+.menu-cadastro {
+	clear: both;
+}
+
+.menu-cadastro-in {
+	/*padding-top: 3px;*/
+	float: left;
+	padding-right: 5px;
+}
+
+.menu-usuario {
+	float: right;
+}
+
+.menu-usuario-in {
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.menu-usuario-dados {
+	margin-top: 5px;
+	padding-right: 15px;
+}
+
+.menu-login {
+	float: right;
+}
+
+.menu-login .btn {
+	margin-top: -10px;
+}
+
+.menu-main {
+	height: 40px;
+	margin-bottom: 18px;
+	clear: both;
+	background-color:  #2c5b94;
+}
+
+.menu-main-item a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 11px 20px 9px 20px;
+	float: left;
+	transition: background-color 0.2s ease-out 0.1s,
+				font-size 0.1s ease-out 0.1s;
+}
+
+.menu-main-item a:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #334975;
+	font-size: 18px;
+	padding: 11px 20px 9px 20px;
+	float: left;
+}
+
+
+.row-fluid .span3 {
+	width: 280px;
+}
+.menu-lateral{
+	width:230px;
+	margin-top:-2px;
+	background-color:#174472;
+	color:#fff;
+	border:1px solid #334975
+}
+
+.menu-destaque{
+	background-color:#019de5;
+	font-size:13px;
+	color:#fff;
+	margin-bottom: 1px;
+}
+
+.item-destaque {
+	margin-bottom: 1px;
+}
+
+
+
+.item-destaque a{
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color:#3a87ad; 
+	font-size: 12px;
+	clear: both;
+	height: 30px;
+
+	transition: padding-left 0.3s ease-out 0.1s,
+				background-color 0.5s ease-out 0.1s
+}
+
+.nav > li > a:hover{
+	padding-left: 15px;
+	text-decoration:none;
+	background-color: #2c5b94;
+	color:#fff;
+}
+
+.principal{
+	width:540px;
+	margin-left:-41px;
+	margin-top:-2px;
+	float:left
+}
+
+.box-destaques{
+	/*width:547px;*/
+	width:550px;
+	margin-bottom:-15px;
+}
+.box-destaques .item img{
+	/*border:1px solid #fff;*/
+	border: 1px solid #334975;
+	border-radius:5px;
+	width:546px;
+	height:280px
+}
+.box-destaques .carousel-caption{
+	margin-left:1px;
+	margin-right:3px;
+	margin-bottom:1px;
+	border-radius:0px 0px 5px 5px;
+}
+.box-destaques .carousel-control{margin-top:10px;margin-left:-9px;margin-right:-9px}
+
+.cadastro{
+	background-color: #eee;
+	color:#334975;
+	width:1100px;
+	font-size:12px;
+	margin-top: -3px;
+	/*height: 650px;*/
+	display: inline-block;
+}
+
+.cadastro-topo {
+	color: #fff;
+	background-color:#019de5;
+	padding-left:10px;
+	padding-top: 8px;
+	height:30px;
+	width: 1090px;
+	font-size:14px;
+	font-weight:600;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+.cadastro-group{
+	width:549px;
+	float:left
+}
+
+.cadastro-group-topo{
+	font-size:14px;
+	font-weight:600;
+	color:#fff;
+	background-color:#3a87ad;
+	padding-left:5px;
+	margin-left:2px;
+	margin-bottom:10px}
+
+.cadastro-input{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	clear:both
+}
+
+.cadastro-labels{
+	padding-left: 5px;
+	font-weight:600;
+	float:left;
+	width:130px;
+}
+
+.cadastro-titulos{
+	padding-top:5px;
+	padding-bottom:10px}
+
+.inputs{
+	padding-bottom:5px;
+	width:500px
+}
+
+.inputs > input[type=checkbox]{
+	margin-top:-1px
+}
+
+.inputs > span {
+	font-weight: 600;
+}
+
+.cadastro-inputs{
+	float:left;
+	width:200px
+}
+
+.cadastro-alertas {
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+	clear: both;
+}
+
+.cadastro-alerta {
+	text-align: center;
+	font-weight: 600;
+	width: 530px;
+	margin-left: 12px;
+	float: left;
+}
+
+.termos{
+	padding-top:5px;
+	font-weight:600;
+	width:300px
+}
+
+.termos > input[type=checkbox]{
+	margin-top:-1px}
+
+.form-action {
+	float: right;
+	margin-right: 190px;
+	padding: 10px 10px 10px 10px;
+}
+
+.regulamento {
+	margin-top: -6px;
+	background-color: #fff;
+	color: #334975;
+}
+
+.regulamento-titulo{
+	color:#fff;
+	background-color:#3a87ad;
+	font-weight:600;
+	height:25px;
+	padding-left:5px;
+	padding-top:5px;
+	margin-top:5px;
+}
+
+.regulamento-conteudo{
+	color:#334975;
+	background-color: #fff;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+	margin-top:0;
+	margin-bottom:5px;
+	display:block
+}
+
+.regulamento-bloco{font-weight:600}
+
+
+.box-resultado-conteudo {
+	width: 860px;
+	margin-top: 0px;	
+	min-height: 371px;
+}
+
+.box-resultado-topo{
+	color: #fff;
+	background-color:#019de5;
+	padding-left:10px;
+	height:40px;
+	width: 850px;
+	font-size:14px;
+	font-weight:600;
+	clear: both;	
+}
+
+.box-resultado-titulo {
+	padding-top: 9px;
+	padding-right: 10px;
+	float: left;
+}
+
+.box-resultado-data {
+	padding-top: 5px;
+	padding-right: 95px;
+	float: right;
+}
+
+.box-resultado-data a{
+	padding-top: 6px;
+	margin-bottom: 10px;
+}
+
+.box-resultado-torneio{
+	color:#fff;
+	background-color:#ddd;
+	width: 100%;
+	float:left
+	margin-top: 0px;
+}
+
+.box-resultado-torneio-header{
+	color:#fff;
+	background-color:#334975;
+	padding-left:5px;
+	padding-top: 3px;
+	width: 855px;
+	height:25px;
+	float:left
+	margin-top: 0px;
+}
+
+.box-resultado-evento{	
+	background-color:#ddd;
+	width: 860px;
+	height:23px;
+	padding-bottom: 2px;
+	clear: both;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #aaa;
+}
+
+.resultado-evento-hora {
+	color:#334975;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+	padding: 3px 5px 2px 5px;
+	width: 40px;
+	float: left;
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+	border-color: #aaa;
+}
+
+.resultado-evento-status {
+	color:#334975;
+	font-size: 13px;
+	padding: 3px 5px 2px 5px;
+	width: 70px;
+	float: left;
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+	border-color: #aaa;
+}
+
+.resultado-evento-casa {
+	color:#334975;
+	font-size: 13px;
+	text-align: right;
+	padding: 3px 5px 2px 5px;
+	width: 270px;
+	float: left;
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+	border-color: #aaa;
+}
+
+.resultado-evento-fora {
+	color:#334975;
+	font-size: 13px;
+	text-align: left;
+	padding: 3px 5px 2px 5px;
+	width: 270px;
+	float: left;
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+	border-color: #aaa;
+}
+
+.resultado-evento-placar {
+	color:#334975;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+	padding: 3px 5px 2px 5px;
+	width: 60px;
+	float: left;
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+	border-color: #aaa;
+}
+
+.resultado-evento-btn a {
+	margin-top: 1px;
+	margin-left: 5px;
+	color: #fff;
+	background-color: #019de5;
+	padding: 1px 5px 2px 5px;
+	width: 75px;
+	float: left;
+	border-radius: 5px;
+	text-decoration: none;
+
+	transition: padding-left 0.2s ease-out 0.1s,
+				margin-left 0.2s ease-out 0.1s
+}
+
+.resultado-evento-btn a:hover {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 3px;
+	padding-left: 10px;
+	background-color: #6fc811;
+}
+
+.resultado-odd {
+	background-color: #eee;
+}
+
+
+.box-consulta-conteudo {
+	width: 860px;
+	margin-top: 0px;	
+	min-height: 371px;
+}
+
+.box-consulta-topo{
+	color: #fff;
+	background-color:#019de5;
+	padding-left:10px;
+	height:40px;
+	width: 850px;
+	font-size:14px;
+	font-weight:600;
+	clear: both;	
+}
+
+.box-consulta-titulo {
+	padding-top: 9px;
+	padding-right: 10px;
+	float: left;
+}
+
+.box-consulta-codigo {
+	padding-top: 5px;
+	padding-right: 95px;
+	float: right;
+}
+
+.box-consulta-codigo a{
+	padding-top: 6px;
+	margin-bottom: 10px;
+}
+
+.box-consulta-cupom{
+	color:#fff;
+	background-color:#fff;
+	width: 100%;
+	float:left
+	margin-top: 0px;
+}
+
+.box-consulta-cupom-header{
+	color:#fff;
+	background-color:#334975;
+	padding-left:5px;
+	padding-top: 3px;
+	width: 855px;
+	height:25px;
+	float:left
+	margin-top: 0px;
+}
+
+.box-consulta-detalhes{	
+	background-color:#eee;
+	width: 860px;
+	height:50px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	clear: both;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #aaa;
+}
+
+.consulta-detalhes-in {
+	color:#334975;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: left;
+	padding: 3px 5px 2px 5px;
+	width: 670px;
+	float: left;
+}
+
+.consulta-detalhes-status {
+	color:#334975;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: -8px;
+	padding-left: 10px;
+	width: 160px;
+	float: left;
+}
+
+.consulta-detalhes-data {
+	font-weight: 500;
+	padding-right: 10px;
+}
+
+.consulta-detalhes-evento {
+	font-weight: 600;
+}
+
+.consulta-detalhes-aposta {
+	font-weight: 500;
+	padding-right: 10px;
+}
+
+.consulta-detalhes-selecao {
+	font-weight: 600;
+	padding-right: 10px;
+}
+
+.consulta-detalhes-cotacao {
+	font-weight: 600;
+}
+
+.box-consulta-resumo{	
+	background-color:#eee;
+	width: 860px;
+	height: 135px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	clear: both;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #aaa;
+}
+
+.box-consulta-resumo-titulo {
+	font-weight: 600;
+	color:#334975;
+	padding-left: 5px;
+	padding-top: 10px;
+	float: left;
+	width: 130px;
+}
+
+.box-consulta-resumo-dados {
+	font-weight: 500;
+	padding-top: 10px;
+	color:#334975;
+	float: left;
+	width: 290px;
+}
+
+.cliente-main {
+	margin-top: 0px;
+	width: 1100px;
+	min-height: 327px;
+}
+
+.cliente-topo {
+	color: #fff;
+	background-color:#334975;
+	padding-left:10px;
+	height:40px;
+	width: 1090px;
+	font-size:14px;
+	/*font-weight:600;*/
+	clear: both;	
+}
+
+.cliente-topo-titulo {
+	padding-top: 10px;
+	clear: both;
+}
+
+.cliente-topo-titulo .dropdown{
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+
+.cliente-topo-titulo a{
+	padding-left: 10px;
+	text-decoration: none;
+	color: #fff;
+}	
+
+.cliente-topo-titulo-in {
+	float: left;
+}
+
+.cliente-conteudo {
+	background-color: #fff;
+	width: 1100px; 
+	clear: both;
+}
+
+.cliente-conteudo-titulo {
+	color: #fff;
+	font-weight: 600;
+	background-color: #019de5;
+	padding: 5px 5px 5px 6px;
+	margin-bottom: 1px;
+}
+
+.cliente-conteudo-titulo input, select {
+	/*margin-top: 10px;*/
+	margin-bottom: 0px;
+}
+
+.cliente-conteudo-dados {
+	color: #334975;
+	font-size: 13px;
+	background-color: #eee;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 2px;
+}
+
+.cliente-conteudo-dados input {
+	margin-bottom: 0px;
+}
+
+.cliente-conteudo-dados table {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.cliente-label {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.box-torneios{
+	width:547px;
+	margin-top:5px;
+	background-color:#eee;
+	cursor: pointer;
+}
+
+.box-torneios-top{width:547px;margin-top:1px;background-color:#eee}
+
+.box-titulo{
+	color: #fff;
+	background-color:#019de5;
+	padding-left:10px;
+	padding-top:5px;
+	height:30px;
+	font-size:14px;
+	font-weight:600
+	
+}
+
+.box-conteudo{
+	color:#334975;
+	background-color:#eee;
+}
+
+.torneio{
+	font-size: 12px;
+	display:inline-block;
+	height:25px;
+	padding-top:5px;
+	padding-left:5px;
+	width:260px;
+	background-color:#eee;
+}
+
+.torneio a{
+	color:#334975;
+	text-decoration:none;
+}
+
+.box-opcoes-titulo {
+	width: 230px;
+	float: left;
+}
+
+.box-opcoes-fut{
+	color:#fff;
+	background-color:#334975;
+	padding-top:5px;
+	padding-left:5px;
+	width:542px;
+	height:25px;
+	float:left
+}
+
+.box-opcoes-titulo-fut{
+	width:350px;
+	float:left
+}
+
+.box-opcoes-cotas-fut{ 
+	width:40px;
+	color:#fff;
+	padding-left:2px;
+	padding-right:2px;
+	margin-left:2px;
+	background-color:#334975;
+	float:left;
+	text-align:center;
+	font-weight:600
+}
+
+.evento-torneio{width:541px;clear:both;padding-left:4px;background-color:#eee;border:1px solid #fff;float:left}
+
+.evento-box-conteudo{
+	color:#334975;
+	clear:both;
+	background-color:#eee;
+}
+
+.evento-fut{
+	width:350px;
+	float:left
+}
+
+.evento-titulo-fut{color:#334975;font-weight:600;width:320px;font-size:12px;float:left;cursor:pointer}
+.evento-data-fut{color:#334975;font-size:11px;width:220px}
+
+.evento-cotacoes-fut{
+	width:190px;
+	float:right;
+	padding-top:5px;
+	cursor:pointer;
+}
+
+.evento-cotacao-fut{
+	width:40px;
+	height:25px;
+	text-align:center;
+	background-color:#334975;
+	color:#fff;
+	font-size: 13px;
+	font-weight:600;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:5px;
+	margin-left:2px;
+	float:left;
+	border-radius:2px
+}
+
+.evento-cotacao-plus{
+	width:40px;
+	height:25px;
+	text-align:center;
+	background-color:#58f;
+	color:#fff;
+	font-size: 13px;
+	font-weight:600;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:5px;
+	margin-left:2px;
+	float:left;
+	border-radius:2px
+}
+
+.painel{
+	margin-top:4px;
+	margin-bottom:10px;
+	background-color:#334975;
+	padding: 2px 2px 1px
+}
+
+.cupom{
+	margin-top:-6px;
+	margin-left:13px;
+	width:308px;
+	float:left;
+	border-radius:5px
+}
+
+.cupom-titulo{background-color:#019de5;height:30px; color: #fff;}
+.cupom-trash{float:right;padding-top:5px;margin-top:0;padding-right:13px}
+.cupom h5{padding-left:5px;padding-top:5px;margin-top:0;margin-bottom:-2px;float:left}
+.cupom-resumo{padding-top:5px;padding-bottom: 2px;margin-bottom:0}
+.aposta-confirma {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	width: 100%;
+}
+
+.apostas{margin-bottom:0}
+.aposta{background-color:#eee;color:#334975;padding-bottom:5px;margin-bottom:2px}
+.aposta-tipo {
+	font-size: 12px;
+}
+#no-aposta{color:#334975;font-size:12px;text-align:center;font-weight:600}
+
+.aposta a{
+	width:264px;
+}
+
+.aposta-evento{font-size:13px}
+.aposta-selecao{font-size:12px;font-weight:600}
+.aposta-erro{color:#fff;font-weight:600;display:block;text-align:center;background-color:red}
+.total{display:block;float:left;padding-top:5px;font-size:13px;font-weight:600}
+.cotacao-total{float:right;background-color:#334975;text-align:center;color:#fff;font-size:16px;
+	font-weight:600;padding:5px 10px;border-radius:3px}
+.cotacao-valor{float:right;width:60px;text-align:right;font-size:18px;font-weight:600}
+
+.total-linha{display:inline-block;width:290px;padding-left:5px; padding-bottom: 2px;}
+
+.total-linha input {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.del-aposta{
+	float:right;
+	padding-right:10px;
+}
+
+.del-aposta a {
+	padding: 0px 5px 2px 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #fff;
+	background-color: red;
+}
+
+.selecao{font-weight:600;font-size:15px}
+.cotacao-aposta{font-weight:600;font-size:14px}
+
+.box-aposta-header{color:#fff;background-color:#58f;padding-top:5px;padding-left:5px;width:542px;height:25px;clear:both;margin-top:2px}
+.aposta-titulo{font-weight:600;width:300px;float:left}
+.aposta-titulo-opcoes{float:left;padding-left:10px;padding-right:25px;margin-left:5px}
+.aposta-opcoes{font-weight:600;float:left;padding-left:20px;padding-right:20px}
+.aposta-conteudo{
+	width:547px;
+	color:#334975;
+	clear:both;
+	height:35px;
+	background-color:#ddd;
+	border:0 solid #ccc;
+	overflow:visible;display:table;border-bottom-color:#fff;border-bottom-width:1px;border-bottom-style:solid}
+
+.aposta-opcao-titulo{
+	width:300px;
+	height:26px;
+	float:left;
+	padding-top:8px;
+	padding-left:3px;
+	background-color:#ddd;
+	display:table
+}
+
+.aposta-opcao-valor{float:left;background-color:#ddd;width:240px;padding-top:2px;padding-bottom:2px}
+
+.aposta-titulo-geral{font-weight:600;width:370px;float:left}
+.aposta-titulo-opcoes-geral{float:left;padding-left:10px;padding-right:35px;margin-left:5px}
+.aposta-opcao-titulo-geral{width:370px;height:26px;float:left;padding-top:8px;padding-left:3px;background-color:#eee;display:table}
+.aposta-opcao-valor-geral{float:left;background-color:#eee;width:160px;padding-top:2px;padding-bottom:2px}
+.opt-cotacao{width:45px;height:25px;text-align:center;background-color:#334975;
+	color:#fff;font-weight:600;padding-left:2px;padding-right:2px;padding-top:5px;
+	margin-left:8px;margin-right:20px;float:left;border-radius:2px;cursor:pointer}
+.aposta-conteudo-band{
+	width:273px;
+	float:left;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:.5px;
+	/*background-color:#eee;*/
+	background-color:#ddd;
+	height:inherit;
+	overflow:visible;
+	display:table
+}
+.aposta-opcao-titulo-band{
+	width:200px;
+	height:26px;
+	float:left;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:3px;
+	background-color:#ddd}
+
+.aposta-opcao-valor-band{
+	float:left;
+	background-color:#ddd;
+	width:60px;
+	padding-top:2px;
+	padding-bottom:2px
+}
+
+.conteudo {
+	margin-top: -10px;
+}
+
+.rodape{
+	background-color: #36d;
+	color: #eee;
+	text-align:center;
+	margin-top:30px;
+	padding-top:5px;
+	padding-bottom:5px;
+	width: 100%;
+}

@@ -1,0 +1,46 @@
+.navbar-brand
+{
+	padding-top: 5px;
+}
+
+#logo_dashb
+{
+	width:120px;
+}
+
+#btnMyAcc{
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+#btnMyAcc:hover{
+	background-color: #17336b;
+	color: white;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu
+{
+	width: 100%;
+}
+
+.dropdown-menu
+{
+	min-width: 100%;
+}
+
+.fa-list{
+	font-size: 0.9em;
+}
+
+#caretOpt{
+	margin-left: 10px;
+}
+
+.futbol-o{
+	color: black;
+}
+
+.ajtAltura{
+	height:auto;
+	overflow:auto;
+}
