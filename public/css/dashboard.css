@@ -14,8 +14,7 @@
 }
 
 #btnMyAcc:hover{
-	background-color: #17336b;
-	color: white;
+	background-color: #e5e5e5;
 }
 
 .navbar-nav>.user-menu>.dropdown-menu
@@ -43,4 +42,22 @@
 .ajtAltura{
 	height:auto;
 	overflow:auto;
+}
+
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
 }
