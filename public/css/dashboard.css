@@ -61,3 +61,21 @@
     max-height: 300px;
     opacity: 1;
 }
+
+#filtrosDep{
+	padding: 10px;
+	background-color: #334975;
+	color: white;
+}
+
+#vwDepositos{
+	margin-top: 10px;
+}
+
+#btnSearchDeps{
+	color: white;
+}
+
+.lblsFilter{
+	margin-top: 5px;
+}
