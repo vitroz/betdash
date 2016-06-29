@@ -11,6 +11,8 @@
 #btnMyAcc{
 	transition: all 0.5s ease;
 	cursor: pointer;
+	padding-right: 5px;
+	padding-left: 0px;
 }
 
 #btnMyAcc:hover{
@@ -62,13 +64,13 @@
     opacity: 1;
 }
 
-#filtrosDep{
+#filtrosDep,#filtrosSaq{
 	padding: 10px;
 	background-color: #334975;
 	color: white;
 }
 
-#vwDepositos{
+#vwDepositos,#vwSaques{
 	margin-top: 10px;
 }
 
@@ -78,4 +80,20 @@
 
 .lblsFilter{
 	margin-top: 5px;
+}
+
+#tableDep,#tableSaq, th{
+	text-align: center;
+}
+
+.ajsFiltro{
+	padding-top: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important; 
+}
+
+.tab-content{
+
+
+
 }

@@ -1,14 +1,14 @@
-<div id="filtrosDep" class="col-sm-12">
-    <span class="pull-left lblsFilter">Período:</span>
-  <div class="col-sm-3">
+<div id="filtrosDep" class="col-sm-12 col-xs-12">
+    <span class="pull-left lblsFilter"><b>Período: </b></span>
+  <div class="col-sm-3 col-xs-12">
     <div class="input-daterange input-group">
         <input type="text" class="input-sm form-control datepicker" id="dataInicio" name="dataInicio">
         <span class="input-group-addon">até</span>
         <input type="text" class="input-sm form-control datepicker" id="dataFim" name="dataFim">                    
     </div>    
   </div>
-    <span class="pull-left lblsFilter">Status:</span>
-  <div class="col-sm-3">
+    <span class="pull-left lblsFilter"><b>Status: </b></span>
+  <div class="col-sm-3 col-xs-12">
       <select style="height:31px;" class="form-control">
         <option>Status</option>
         <option>option 2</option>
@@ -17,19 +17,19 @@
         <option>option 5</option>
       </select>
   </div>
-  <div class="text-right pull-right col-sm-4">
-    <button type="button" id="btnSearchDeps" class="btn btn-primary"><i class="fa fa-search"></i> Pesquisar</button>
+  <div class="text-right pull-right col-sm-4 col-xs-12">
+    <button type="button" id="btnSearchDeps" class="btn btn-primary"><i class="fa fa-search"></i> <b>Pesquisar</b></button>
   </div>
 </div>
 
 <div id="vwDepositos"class="col-sm-12">
-  <table id="tableDep" class="table table-striped table-bordered">
-    <thead>
+  <table id="tableDep" class="table table-hover table-striped table-bordered">
+    <thead class="thead-inverse">
       <tr>
-        <th>Deposito</th>
-        <th>Valor</th>
-        <th>Data do Depósito</th>     
-        <th>Status</th> 
+        <th><i class="fa fa-envelope-o"></i> Deposito</th>
+        <th><i class="fa fa-usd"></i> Valor</th>
+        <th><i class="fa fa-clock-o"></i> Data do Depósito</th>     
+        <th><i class="fa fa-check"></i> Status</th> 
       </tr>
     </thead>
     <tbody>
@@ -77,8 +77,8 @@
 
 
 <script type="text/javascript">
-  $('#tableDep').DataTable();
-
   var picker = new Pikaday({ field: $('.datepicker')[0] });
   var picker2 = new Pikaday({ field: $('.datepicker')[1] });
+
+  $('.tab-content').addClass('ajsFiltro');
 </script>

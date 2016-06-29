@@ -1,1 +1,84 @@
-saques.html
+<div id="filtrosSaq" class="col-sm-12 col-xs-12">
+    <span class="pull-left lblsFilter"><b>Período: </b></span>
+  <div class="col-sm-3 col-xs-12">
+    <div class="input-daterange input-group">
+        <input type="text" class="input-sm form-control datepicker" id="dataInicioSaq" name="dataInicio">
+        <span class="input-group-addon">até</span>
+        <input type="text" class="input-sm form-control datepicker" id="dataFimSaq" name="dataFim">                    
+    </div>    
+  </div>
+    <span class="pull-left lblsFilter"><b>Status: </b></span>
+  <div class="col-sm-3 col-xs-12">
+      <select style="height:31px;" class="form-control">
+        <option>Status</option>
+        <option>option 2</option>
+        <option>option 3</option>
+        <option>option 4</option>
+        <option>option 5</option>
+      </select>
+  </div>
+  <div class="text-right pull-right col-sm-4 col-xs-12">
+    <button type="button" id="btnSearchDeps" class="btn btn-primary"><i class="fa fa-search"></i> <b>Pesquisar</b></button>
+  </div>
+</div>
+
+<div id="vwSaques"class="col-sm-12">
+  <table id="tableSaq" class="table table-hover table-striped table-bordered">
+    <thead class="thead-inverse">
+      <tr>
+        <th><i class="fa fa-money"></i> Saque</th>
+        <th><i class="fa fa-usd"></i> Valor</th>
+        <th><i class="fa fa-clock-o"></i> Data do Saque</th>     
+        <th><i class="fa fa-check"></i> Status</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>id</td>
+        <td>R$ 30.00</td>
+        <td>22 de Junho de 2016 : hh:mm</td>
+        <td><span style="color:green"><b>Recebido</b></span></td>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td>R$ 30.00</td>
+        <td>22 de Junho de 2016 : hh:mm</td>
+        <td><span style="color:green"><b>Recebido</b></span></td>
+      </tr>
+        <tr>
+        <td>id</td>
+        <td>R$ 30.00</td>
+        <td>22 de Junho de 2016 : hh:mm</td>
+        <td><span style="color:green"><b>Recebido</b></span></td>
+      </tr>
+        <tr>
+        <td>id</td>
+        <td>R$ 30.00</td>
+        <td>22 de Junho de 2016 : hh:mm</td>
+        <td><span style="color:orange"><b>Em Processo</b></span></td>
+      </tr>
+        <tr>
+        <td>id</td>
+        <td>R$ 30.00</td>
+        <td>22 de Junho de 2016 : hh:mm</td>
+        <td><span style="color:orange"><b>Em Processo</b></span></td>
+      </tr>
+        <tr>
+        <td>id</td>
+        <td>R$ 30.00</td>
+        <td>22 de Junho de 2016 : hh:mm</td>
+        <td><span style="color:red"><b>Não autorizado</b></span></td>
+      </tr>
+    </tbody>
+    
+  </table>
+</div>
+
+
+
+<script type="text/javascript">
+  var picker = new Pikaday({ field: $('.datepicker')[0] });
+  var picker2 = new Pikaday({ field: $('.datepicker')[1] });
+
+  $('.tab-content').addClass('ajsFiltro');
+</script>

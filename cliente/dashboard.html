@@ -28,6 +28,7 @@
   <![endif]-->
   <link rel="stylesheet" type="text/css" href="../public/css/dataTables.bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../public/css/pikaday.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
   <link rel="stylesheet" href="../public/css/dashboard.css">
 
 </head>
@@ -98,7 +99,7 @@
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- The user image in the navbar-->
-                <img src="../public/img/admin-lte/user2-160x160.jpg" class="user-image" alt="User Image">
+               <!--  <img src="../public/img/admin-lte/user2-160x160.jpg" class="user-image" alt="User Image"> -->
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                 <span class="hidden-xs">{{Nome User}}</span>
               </a>
@@ -176,7 +177,7 @@
       <div class="pull-right hidden-xs">
         <b>Todos os direitos</b> reservados.
       </div>
-      <strong>Copyright &copy; Bet1000.com.br</strong>  - Apostas Esportivas Online <a href="http://bet1000.com.br"></a>
+      <strong>&copy; Bet1000.com.br</strong>  - Apostas Esportivas Online <a href="http://bet1000.com.br"></a>
     </div>
     <!-- /.container -->
   </footer>
@@ -243,7 +244,8 @@ $( document ).ready(function() {
 
         $('#optTabs').append('<li class="'+active+'"><a href="#tab_'+i+'" data-toggle="tab" aria-expanded="'+expand+'">'+actions[i]+'</a></li>');
 
-        $('.tab-content').append('<div class="tab-pane ajtAltura" id="tab_'+i+'"></div>');
+
+        $('.tab-content').append('<div class="tab-pane ajtAltura animated fadeIn" id="tab_'+i+'"></div>');
       }
   }
 
@@ -279,10 +281,15 @@ $( document ).ready(function() {
                   'views/historico/depositos.html',
                   'views/historico/saques.html'
                   ];
+      ConViews = ['views/conta/detalhes.html',
+                  'views/conta/acessos.html'
+                  ];
+
 
       if(input == 'Movimento'){
         Actions = MovAction;
         Views = MovViews;
+        $('.tab-content').removeClass('ajsFiltro');
       }
       else if(input == 'Historico'){
         Actions = HisAction;
@@ -291,9 +298,11 @@ $( document ).ready(function() {
       else if(input == 'Home'){
         Actions = HomAction;
         Views = HomViews;
+        $('.tab-content').removeClass('ajsFiltro');
       }
       else{
-        Actions = ConAction;        
+        Actions = ConAction;  
+        Views = ConViews;      
       } 
 
       carregaTabs(Actions,input);
@@ -325,6 +334,7 @@ $( document ).ready(function() {
 
   $("#dropMenu").on("click", function(){
     $('#dropMenu').removeClass();
+    $('#dropMenu').addClass('dropdown');
   });
 
 
