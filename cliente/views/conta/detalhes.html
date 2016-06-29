@@ -10,20 +10,36 @@
       <ul class="list-group list-group-unbordered">
         <li class="list-group-item">
           <b><i class="fa fa-road"></i> Endereço: </b><br>
-          <input class="form-control" type="text" placeholder="Av. Vieira Souto, Rua 20, Quadra B, Bairro: Vinhais">
+          <input class="form-control" id="endereco" type="text" placeholder="Av. Vieira Souto, Rua 20, Quadra B, Bairro: Vinhais" readonly>
         </li>
         <li class="list-group-item">
           <b><i class="fa fa-phone"></i> Telefone: </b><br>
-          <input class="form-control" type="number" placeholder="(98) 8765-2232">
+          <input class="form-control" id="fone" type="text" placeholder="(98) 8765-2232" readonly>
         </li>
         <li class="list-group-item">
           <b><i class="fa fa-at"></i> Email: </b><br>
-          <input class="form-control" type="email" placeholder="usuario@mail.com">
+          <input class="form-control" id="email" type="email" placeholder="usuario@mail.com"readonly >
         </li>
       </ul>
 
-      <a href="#" class="btn btn-warning btn-block"><b>Atualizar Dados</b></a>
+      <a href="#" id="btnAtualizar" class="btn btn-warning btn-block"><b>Atualizar Dados</b></a>
     </div>
     <!-- /.box-body -->
   </div>  
 </div>
+
+<script type="text/javascript">
+  $('#btnAtualizar').on('click',function(){
+    $('#endereco').attr('readonly',false);
+    $('#fone').attr('readonly',false);
+    $('#email').attr('readonly',false);
+
+    $('#endereco').val('Av. Vieira Souto, Rua 20, Quadra B, Bairro: Vinhais');
+    $('#fone').val('(98) 8765-2232');
+    $('#email').val('usuario@email.com');
+
+    $(this).attr('class','');
+    $(this).addClass('btn btn-primary btn-block');
+    $(this).text('Salvar');
+  })
+</script>
