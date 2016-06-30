@@ -135,8 +135,8 @@
           <small>Versão 1.0</small>
         </h1>
         <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-          <li class="active"><i class="fa fa-dashboard"></i> Minha Conta</li>
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li class="active"><i class="fa fa-home"></i> Minha Conta</li>
         </ol>
       </section>
 
@@ -205,7 +205,7 @@
                 </ul>
               </div>
             </div>
-            <div id="viewsPanel" class="bgWhite noPadLeftRight col-xs-12">
+            <div id="viewsPanel" class="box bgWhite noPadLeftRight col-xs-12">
               <div class="animated fadeIn tab-content">
                 <div class="text-center">
                   <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
@@ -248,6 +248,7 @@
 <script src="../public/js/jquery.dataTables.min.js"></script>
 <script src="../public/js/dataTables.bootstrap.min.js"></script>
 <script src="../public/js/pikaday.js"></script>
+<script src="../public/js/layout.js"></script> <!-- Script Funcoes de Ajustes de Layout -->
 
 </body>
 </html>
@@ -274,6 +275,8 @@ $(document).ready(function() {
       $('#viewsPanel').html('');
       $('#viewsPanel').html('<div class="animated fadeIn tab-content"></div>')
 
+      setPath(opt);
+
       $('.tab-content').load(viewsDic[opt]);
   }
 
@@ -284,29 +287,7 @@ $(document).ready(function() {
     selectOptionMenu($(this).text());
   });
 
-  $(".opcoesMenu").on("mouseenter", function(){
-    $(this).addClass('open');
-    $(this).attr('aria-expanded',true);
-  });
-
-  $(".opcoesMenu").on("mouseleave", function(){
-    $(this).removeClass('open');
-  });
-
-  $(".opcoesMenu").on("click", function(){
-    $(this).removeClass();
-    $(this).addClass('dropdown');
-    $('#dropMenu,#dropMenu2,#dropMenu3,#dropMenu4').removeClass('activeMenu');
-    $(this).parent().children(':first-child').addClass('activeMenu');
-  });
-
-
-
 
 
 });
-
-
-
-
 </script>
