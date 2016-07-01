@@ -144,3 +144,7 @@
 .infoGerais{
 	padding: 15px;
 }
+
+#loading{
+	display: none;
+}
